@@ -3,6 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "node task/taskmanager/backend/app.js"
+    "start": "node task/src/App.js"
   }
 }
