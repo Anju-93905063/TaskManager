@@ -1,0 +1,97 @@
+/* TaskItem.css */
+
+/* Task Item Styling */
+.task-item {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.task-details h5 {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.task-details p {
+  font-size: 1rem;
+}
+
+/* Completed task style */
+.completed-task {
+  text-decoration: line-through;
+  color: #6c757d;
+}
+
+/* Task Action Buttons */
+.task-actions button {
+  margin-right: 10px;
+  border-radius: 5px;
+  padding: 8px 12px;
+}
+
+.task-actions button:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+/* Toggle completion button */
+.btn-success {
+  background-color: #28a745;
+  border: none;
+}
+
+.btn-outline-success {
+  border-color: #28a745;
+  color: #28a745;
+}
+
+.btn-outline-success:hover {
+  background-color: #28a745;
+  color: white;
+}
+
+/* Edit and Delete buttons */
+.btn-outline-primary {
+  color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-outline-danger {
+  color: #dc3545;
+  border-color: #dc3545;
+}
+
+.btn-outline-primary:hover,
+.btn-outline-danger:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+/* Edit Task Form */
+.edit-task-form {
+  margin-top: 20px;
+}
+
+.edit-task-form input,
+.edit-task-form textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.edit-task-form button {
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.edit-task-form button:hover {
+  background-color: #218838;
+}

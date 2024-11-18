@@ -1,0 +1,26 @@
+/* Styling for the navbar */
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 18px;
+  }
+  
+  .navbar a:hover {
+    background-color: #555;
+    border-radius: 4px;
+  }
+  
