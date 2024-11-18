@@ -1,6 +1,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
+const path = require("path");
 require("dotenv").config();
 
 const taskRoutes = require("./routes/taskRoutes"); // Import task routes
@@ -13,6 +14,17 @@ app.use(express.json()); // Parse JSON request bodies
 
 // Routes
 app.use("/api/tasks", taskRoutes); // Mount task routes
+
+// Serve React app in production
+if (process.env.NODE_ENV === "production") {
+  // Set static folder to React's build folder
+  app.use(express.static(path.join(__dirname, "task", "src", "build")));
+
+  // For any other route, serve the React index.html
+  app.get("*", (req, res) => {
+    res.sendFile(path.join(__dirname, "task", "src", "build", "index.html"));
+  });
+}
 
 // Port configuration
 const PORT = process.env.PORT || 5000;
