@@ -2,8 +2,7 @@
   "name": "task_manager",
   "version": "0.1.0",
   "private": true,
-    "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-     "start": "node app.js"
+  "scripts": {
+    "start": "node task/taskmanager/backend/app.js"
   }
 }
